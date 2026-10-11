@@ -59,7 +59,6 @@ html[data-theme="light"] .exp-item::before{background:var(--accent2);}
 html[data-theme="light"] .exp-date,
 html[data-theme="light"] .exp-card-label,
 html[data-theme="light"] .cert-issuer,
-html[data-theme="light"] .blog-cat,
 html[data-theme="light"] .proj-card-num,
 html[data-theme="light"] .pd-section-label,
 html[data-theme="light"] .res-sec-title,
@@ -74,13 +73,11 @@ html[data-theme="light"] .marquee-wrap{background:var(--bg2);}
 html[data-theme="light"] .home-exp{background:var(--bg2);}
 html[data-theme="light"] .home-projects{background:var(--bg2);}
 html[data-theme="light"] .home-contact-strip{background:var(--bg2);}
-html[data-theme="light"] .blog-wip{background:var(--bg3);}
 /* Card accent stripe — lime primary */
 html[data-theme="light"] .card::before{background:var(--accent);}
 /* Hover arrow — lime */
 html[data-theme="light"] .proj-row:hover .proj-title,
-html[data-theme="light"] .proj-card:hover .proj-card-title,
-html[data-theme="light"] .blog-card:hover .blog-title{color:#4a7a00;}
+html[data-theme="light"] .proj-card:hover .proj-card-title{color:#4a7a00;}
 html[data-theme="light"] .proj-row:hover .proj-arrow{color:var(--accent);}
 /* Outcome numbers — lime */
 html[data-theme="light"] .pd-outcome-num{color:#4a7a00;}
@@ -318,22 +315,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:var(--nav-h);display:
 .cert-status.progress{background:rgba(232,255,71,.08);border:1px solid rgba(232,255,71,.2);color:var(--accent);}
 .cert-note{font-size:.78rem;color:var(--muted2);font-style:italic;margin-top:2rem;padding:1.25rem;border:1px solid var(--border);border-left:2px solid var(--accent);}
 
-/* ── BLOG PAGE ── */
-#page-blog .blog-hero{padding:5rem 0 3rem;border-bottom:1px solid var(--border);}
-.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:1px;background:var(--border);margin-top:3.5rem;}
-.blog-card{background:var(--bg2);padding:2.5rem;transition:background .2s;}
-.blog-card:hover{background:var(--bg3);}
-.blog-cat{font-family:var(--font-mono);font-size:.6rem;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.75rem;}
-.blog-title{font-family:var(--font-display);font-size:1.3rem;font-weight:700;line-height:1.2;margin-bottom:.75rem;transition:color .2s;}
-.blog-card:hover .blog-title{color:var(--accent);}
-.blog-excerpt{font-size:.85rem;color:var(--muted);line-height:1.7;font-weight:300;margin-bottom:1.5rem;}
-.blog-footer{display:flex;justify-content:space-between;align-items:center;padding-top:1.25rem;border-top:1px solid var(--border);}
-.blog-date{font-family:var(--font-mono);font-size:.62rem;color:var(--muted2);letter-spacing:.06em;}
-.blog-read{font-family:var(--font-mono);font-size:.62rem;color:var(--muted);letter-spacing:.06em;}
-.blog-wip{text-align:center;padding:4rem;background:var(--bg3);border:1px dashed var(--border2);margin-top:3rem;}
-.blog-wip h3{font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:.75rem;}
-.blog-wip p{font-size:.9rem;color:var(--muted);font-weight:300;}
-
 /* ── RESUME PAGE ── */
 #page-resume .resume-hero{padding:5rem 0 3rem;border-bottom:1px solid var(--border);}
 .resume-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-top:4rem;}
@@ -430,7 +411,6 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
     <li><a href="#" onclick="navigate('home');return false;" data-page="home">Home</a></li>
     <li><a href="#" onclick="navigate('projects');return false;" data-page="projects">Projects</a></li>
     <li><a href="#" onclick="navigate('certs');return false;" data-page="certs">Certifications</a></li>
-    <li><a href="#" onclick="navigate('blog');return false;" data-page="blog">Blog</a></li>
     <li><a href="#" onclick="navigate('resume');return false;" data-page="resume">Resume</a></li>
     <li><a href="#" onclick="navigate('contact');return false;" data-page="contact">Contact</a></li>
   </ul>
@@ -445,7 +425,6 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
   <a href="#" onclick="navigate('home');toggleMenu();return false;">Home</a>
   <a href="#" onclick="navigate('projects');toggleMenu();return false;">Projects</a>
   <a href="#" onclick="navigate('certs');toggleMenu();return false;">Certifications</a>
-  <a href="#" onclick="navigate('blog');toggleMenu();return false;">Blog</a>
   <a href="#" onclick="navigate('resume');toggleMenu();return false;">Resume</a>
   <a href="#" onclick="navigate('contact');toggleMenu();return false;">Contact</a>
 </div>
@@ -645,7 +624,6 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
           <div class="exp-item"><div class="exp-date">2026</div><div class="exp-ttl">Industrial Training — AI Agents & Automation</div><div class="exp-org">n8n · Gemini · Google AI Studio · Lovable.dev</div></div>
           <div class="exp-item"><div class="exp-date">2026</div><div class="exp-ttl">Industrial Training — Full-Stack Development</div><div class="exp-org">React · Node.js · Express · MongoDB</div></div>
           <div class="exp-item"><div class="exp-date">2026</div><div class="exp-ttl">Thinkathon Hackathon</div><div class="exp-org">Team G — CropCare</div></div>
-          <div class="exp-item"><div class="exp-date">2024 — 2026</div><div class="exp-ttl">Frontend Developer Intern</div><div class="exp-org">Unstop / Jobs Territory</div></div>
           <div class="exp-item"><div class="exp-date">2024 — Present</div><div class="exp-ttl">B.Tech CSE (Cyber Security)</div><div class="exp-org">GNDEC, Ludhiana · Expected 2028</div></div>
         </div>
         <div class="exp-card reveal d2">
@@ -689,12 +667,12 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
       <div class="sec-label">Achievements</div>
       <h2 class="sec-title reveal">Beyond the Code</h2>
       <div class="ach-grid reveal d1">
-        <div class="ach-item"><div class="ach-icon">📻</div><div class="ach-title">Community Radio Team</div><div class="ach-sub">Active member of 90.8 MHz FM GNDEC Digital Media Management Team since 2023</div></div>
-        <div class="ach-item"><div class="ach-icon">🏆</div><div class="ach-title">Thinkathon 2026</div><div class="ach-sub">Built CropCare AI farm management platform — selected hackathon project, expanded post-event</div></div>
-        <div class="ach-item"><div class="ach-icon">🎓</div><div class="ach-title">NPTEL Certifications</div><div class="ach-sub">Human Computer Interaction (IIIT Delhi) & Operations Management (IIT Roorkee)</div></div>
-        <div class="ach-item"><div class="ach-icon">🤖</div><div class="ach-title">5 AI-Powered Products</div><div class="ach-sub">CropCare · SmartHire AI · Live Mirror · StudySync · Club Connect — all in active development</div></div>
-        <div class="ach-item"><div class="ach-icon">🎨</div><div class="ach-title">UI/UX Design Practice</div><div class="ach-sub">Figma prototyping and design systems across production-grade projects and case studies</div></div>
-        <div class="ach-item"><div class="ach-icon">📖</div><div class="ach-title">Open Source Contributor</div><div class="ach-sub">Active GitHub with documented repositories, READMEs, and case studies for each project</div></div>
+        <div class="ach-item"><div class="ach-icon">🏆</div><div class="ach-title">Thinkathon 2026</div><div class="ach-sub">Built CropCare AI agriculture platform in 24 hours — expanded into a full product post-event</div></div>
+        <div class="ach-item"><div class="ach-icon">🎓</div><div class="ach-title">NPTEL Elite Certifications</div><div class="ach-sub">HCI — Elite 95% (IIIT Delhi) · Operations Management — Elite 77% (IIT Roorkee)</div></div>
+        <div class="ach-item"><div class="ach-icon">🤖</div><div class="ach-title">4 AI-Powered Products</div><div class="ach-sub">CropCare · SmartHire AI · LiveMirror · FinPilot AI — built and actively in development</div></div>
+        <div class="ach-item"><div class="ach-icon">📻</div><div class="ach-title">Community Radio Team</div><div class="ach-sub">Digital Media Management at 90.8 MHz FM GNDEC since 2023</div></div>
+        <div class="ach-item"><div class="ach-icon">🎨</div><div class="ach-title">ISTE Creative Team</div><div class="ach-sub">Designing event posters, social media graphics, and branding for ISTE GNDEC chapter</div></div>
+        <div class="ach-item"><div class="ach-icon">📖</div><div class="ach-title">Open Source Contributor</div><div class="ach-sub">Active GitHub with documented repositories and case studies: CropCare · SmartHire · LiveMirror · FinPilot</div></div>
       </div>
     </div>
   </section>
@@ -969,63 +947,7 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
 
 <!-- ══════════════════════ PROJECT DETAIL: AGRI ══════════════════════ -->
 <div class="page" id="page-project-agri">
-  <div class="container">
-    <div class="pd-hero">
-      <button class="pd-back" onclick="navigate('projects')">← Back to Projects</button>
-      <span class="tag accent" style="margin-bottom:1rem;display:inline-block;">AI / ML · Hackathon</span>
-      <div class="pd-title">AgriDetect<br>AI Farm Mgmt</div>
-      <div class="pd-meta">
-        <div class="pd-meta-item">Event <strong>Thinkathon 2026</strong></div>
-        <div class="pd-meta-item">Team <strong>Team G</strong></div>
-        <div class="pd-meta-item">Stack <strong>Gemini API · JavaScript · HTML5</strong></div>
-      </div>
-      <div class="pd-links">
-        <a href="https://github.com/Pragat1" target="_blank" class="btn-p">View on GitHub</a>
-        <button class="btn-s" onclick="navigate('projects')">← All Projects</button>
-      </div>
-    </div>
-    <div class="pd-body">
-      <div class="pd-grid">
-        <div>
-          <div class="pd-section">
-            <div class="pd-section-label">Overview</div>
-            <p>Built at <strong>Thinkathon 2026</strong> in 24 hours — CropCare is an AI-powered smart agriculture platform that helps farmers identify plant diseases and receive smart irrigation recommendations without internet dependency.</p>
-            <p>The platform is a <strong>fully offline-capable system</strong> with a 30+ disease database covering 12 crops, crop-specific detection logic, and localStorage-based history — now being expanded into a full-stack product.</p>
-          </div>
-          <div class="pd-section">
-            <div class="pd-section-label">Key Features</div>
-            <ul>
-              <li>AI-powered plant disease detection using Gemini API integration</li>
-              <li>30+ disease database covering 12 major crops</li>
-              <li>Offline fallback mode with local disease database</li>
-              <li>Smart irrigation schedule recommendations based on crop and weather</li>
-              <li>Detection history stored locally for farm record-keeping</li>
-              <li>Mobile-optimized for field use by farmers</li>
-            </ul>
-          </div>
-          <div class="pd-section">
-            <div class="pd-section-label">Technical Challenges</div>
-            <div class="pd-challenge-box">
-              <p><strong>Offline-first architecture</strong> — Building a system that works reliably without internet in rural areas required building a comprehensive local disease database as fallback, with graceful API degradation.</p>
-            </div>
-            <div class="pd-challenge-box" style="margin-top:.75rem;border-left-color:var(--accent);">
-              <p><strong>24-hour constraint</strong> — Scoping the MVP correctly under time pressure, then iterating to v3 post-hackathon, taught me rapid prototyping, prioritization, and knowing when to ship vs. polish.</p>
-            </div>
-          </div>
-        </div>
-        <div class="pd-sidebar">
-          <div class="pd-sidebar-card">
-            <div class="pd-sidebar-label">Technologies Used</div>
-            <div class="pd-tech-list"><span class="tag filled">Gemini API</span><span class="tag filled">JavaScript</span><span class="tag filled">HTML5</span><span class="tag filled">CSS3</span><span class="tag filled">localStorage</span></div>
-          </div>
-          <div class="pd-sidebar-card" style="margin-top:1px;border-top:none;">
-            <div class="pd-sidebar-label">Hackathon Details</div>
-            <p style="font-size:.82rem;color:var(--muted);line-height:1.7;">Event: Thinkathon 2026<br>Team: Team G<br>Duration: 24 hours<br>Track: AgriTech / AI</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <script>navigate('project-cropcaredetail');</script>
 </div>
 
 <!-- ══════════════════════ DETAIL: CROPCARE ══════════════════════ -->
@@ -1103,14 +1025,14 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
   <div class="container">
     <div class="pd-hero">
       <button class="pd-back" onclick="navigate('projects')">← Back to Projects</button>
-      <span class="tag accent" style="margin-bottom:1rem;display:inline-block;">AI · Career Tools · Full-Stack</span>
+      <span class="tag accent" style="margin-bottom:1rem;display:inline-block;">AI · Career Tools</span>
       <div class="pd-title">📄 SmartHire AI</div>
       <div class="pd-meta">
         <div class="pd-meta-item">Status <strong>Active · Partially Built</strong></div>
-        <div class="pd-meta-item">Stack <strong>AI/LLM · React · Node.js · MongoDB</strong></div>
+        <div class="pd-meta-item">Stack <strong>React · TypeScript · Tailwind CSS · AI/LLM</strong></div>
       </div>
       <div class="pd-links">
-        <a href="https://github.com/Pragat1" target="_blank" class="btn-p">View on GitHub</a>
+        <a href="https://github.com/pragat1/SmartHire" target="_blank" class="btn-p">View on GitHub</a>
         <button class="btn-s" onclick="navigate('projects')">← All Projects</button>
       </div>
     </div>
@@ -1125,29 +1047,34 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
           <div class="pd-section">
             <div class="pd-section-label">Key Features</div>
             <ul>
-              <li>AI resume builder with structured sections and guided prompts</li>
-              <li>ATS analysis engine — scores resume against job descriptions</li>
-              <li>Keyword gap analysis: what's missing vs. what the job needs</li>
-              <li>Multiple professional resume templates with export to PDF</li>
-              <li>AI career coach for interview prep and career path guidance</li>
-              <li>Resume scoring dashboard with improvement history</li>
+              <li>AI resume analyser evaluating ATS compatibility, structure, readability, grammar, and measurable achievements</li>
+              <li>Actionable improvement recommendations surfaced per section</li>
+              <li>Job-description keyword matching — classifies skills as matched, partially matched, or missing</li>
+              <li>Interactive analytics dashboard showing resume health at a glance</li>
             </ul>
           </div>
           <div class="pd-section">
             <div class="pd-section-label">Technical Challenges</div>
             <div class="pd-challenge-box">
-              <p><strong>ATS simulation accuracy</strong> — Real ATS systems are proprietary. Building a scoring model that meaningfully predicts ATS behavior required studying publicly available ATS documentation and testing against known outcomes.</p>
+              <p><strong>ATS simulation accuracy</strong> — Real ATS systems are proprietary black boxes. Building a scoring model that meaningfully predicts ATS behaviour required studying public ATS documentation and testing against known pass/fail outcomes.</p>
+            </div>
+            <div class="pd-challenge-box" style="margin-top:.75rem;border-left-color:var(--accent);">
+              <p><strong>Keyword classification</strong> — Distinguishing "matched", "partially matched", and "missing" skills required semantic similarity logic rather than simple string matching, since job descriptions rarely use the exact same phrasing as resumes.</p>
             </div>
           </div>
         </div>
         <div class="pd-sidebar">
           <div class="pd-sidebar-card">
             <div class="pd-sidebar-label">Technologies</div>
-            <div class="pd-tech-list"><span class="tag filled">AI/LLM</span><span class="tag filled">React</span><span class="tag filled">Node.js</span><span class="tag filled">Express</span><span class="tag filled">MongoDB</span><span class="tag filled">PDF Export</span></div>
+            <div class="pd-tech-list"><span class="tag filled">React</span><span class="tag filled">TypeScript</span><span class="tag filled">Tailwind CSS</span><span class="tag filled">AI/LLM Integration</span><span class="tag filled">Vite</span></div>
           </div>
           <div class="pd-sidebar-card" style="margin-top:1px;border-top:none;">
             <div class="pd-sidebar-label">Status</div>
-            <p style="font-size:.82rem;color:var(--muted);line-height:1.7;">Partially built. Resume builder and ATS scorer functional. Career coach module in progress.</p>
+            <p style="font-size:.82rem;color:var(--muted);line-height:1.7;">Active. ATS analyser and keyword matcher functional. Analytics dashboard in progress.</p>
+          </div>
+          <div class="pd-sidebar-card" style="margin-top:1px;border-top:none;">
+            <div class="pd-sidebar-label">GitHub</div>
+            <a href="https://github.com/pragat1/SmartHire" target="_blank" class="btn-p" style="display:block;text-align:center;font-size:.65rem;">github.com/pragat1/SmartHire ↗</a>
           </div>
         </div>
       </div>
@@ -1160,14 +1087,14 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
   <div class="container">
     <div class="pd-hero">
       <button class="pd-back" onclick="navigate('projects')">← Back to Projects</button>
-      <span class="tag accent" style="margin-bottom:1rem;display:inline-block;">AI · WebRTC · Interview Prep</span>
-      <div class="pd-title">🎤 Live Mirror</div>
+      <span class="tag accent" style="margin-bottom:1rem;display:inline-block;">AI · Interview Prep · In Development</span>
+      <div class="pd-title">🎤 LiveMirror</div>
       <div class="pd-meta">
-        <div class="pd-meta-item">Status <strong>Active · Concept + UI</strong></div>
-        <div class="pd-meta-item">Stack <strong>AI/LLM · WebRTC · JavaScript</strong></div>
+        <div class="pd-meta-item">Status <strong>In Development</strong></div>
+        <div class="pd-meta-item">Stack <strong>React · TypeScript · Gemini API · Node.js · PostgreSQL</strong></div>
       </div>
       <div class="pd-links">
-        <a href="https://github.com/Pragat1" target="_blank" class="btn-p">View on GitHub</a>
+        <a href="https://github.com/pragat1/LiveMirror" target="_blank" class="btn-p">View on GitHub</a>
         <button class="btn-s" onclick="navigate('projects')">← All Projects</button>
       </div>
     </div>
@@ -1176,40 +1103,42 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
         <div>
           <div class="pd-section">
             <div class="pd-section-label">Overview</div>
-            <p>Live Mirror (AI Interview Coach) is a <strong>mock-interview platform</strong> with voice interaction, eye-movement tracking, and confidence analysis — the most differentiated project in the portfolio. It simulates a real interview environment and delivers AI-generated feedback, a results dashboard, and automated PDF report generation.</p>
-            <p>Built with <strong>React, TypeScript, TanStack, Gemini API, and PostgreSQL</strong>. Full authentication, session history, and shareable performance reports.</p>
+            <p>LiveMirror is an <strong>AI interview simulation platform</strong> — currently in development — that generates role-specific interview questions, gives personalised feedback on responses, and runs voice-based mock interviews with speech analysis and structured AI-driven performance evaluation.</p>
+            <p>Built with <strong>React, TypeScript, Tailwind CSS, Gemini API, Node.js, Express.js, and PostgreSQL</strong>.</p>
           </div>
           <div class="pd-section">
             <div class="pd-section-label">Key Features</div>
             <ul>
-              <li>Live practice room with camera and microphone voice interaction</li>
-              <li>Eye-movement and confidence tracking via webcam signals</li>
-              <li>AI-generated interview questions by domain, role, and difficulty level</li>
-              <li>Real-time communication signal analysis — pacing, filler words, pauses</li>
-              <li>Behavioral response scoring against STAR framework using Gemini API</li>
-              <li>Results dashboard with per-question breakdown and overall performance score</li>
-              <li>Automated PDF report generation for session sharing and portfolio proof</li>
-              <li>Full authentication — user accounts with session history</li>
+              <li>Role-specific interview question generation via Gemini API</li>
+              <li>Voice-based mock interviews with real-time speech input</li>
+              <li>Speech analysis — pacing, filler words, response clarity</li>
+              <li>Structured AI-driven performance evaluation per answer</li>
+              <li>Personalised feedback with improvement areas highlighted</li>
+              <li>Session history stored in PostgreSQL for progress tracking</li>
             </ul>
           </div>
           <div class="pd-section">
             <div class="pd-section-label">Technical Challenges</div>
             <div class="pd-challenge-box">
-              <p><strong>Real-time analysis latency</strong> — Processing audio and eye-tracking signals simultaneously while maintaining a natural conversation flow required batching analysis at speech pauses rather than frame-by-frame, significantly reducing lag without losing accuracy.</p>
+              <p><strong>Streaming AI responses during live interviews</strong> — Waiting for a full Gemini API response between question and feedback breaks the interview flow. Implementing streamed responses lets feedback begin rendering while the model is still generating.</p>
             </div>
             <div class="pd-challenge-box" style="margin-top:.75rem;border-left-color:var(--accent);">
-              <p><strong>PDF report generation in browser</strong> — Automatically generating structured, styled PDF reports from session data server-side required careful layout design and data serialisation from PostgreSQL session records.</p>
+              <p><strong>Speech-to-text reliability</strong> — Browser Web Speech API accuracy varies by accent and environment. Building a fallback that gracefully handles low-confidence transcriptions without stalling the session required careful error state design.</p>
             </div>
           </div>
         </div>
         <div class="pd-sidebar">
           <div class="pd-sidebar-card">
             <div class="pd-sidebar-label">Technologies</div>
-            <div class="pd-tech-list"><span class="tag filled">React</span><span class="tag filled">TypeScript</span><span class="tag filled">TanStack</span><span class="tag filled">Gemini API</span><span class="tag filled">PostgreSQL</span><span class="tag filled">Tailwind CSS</span><span class="tag filled">PDF Generation</span></div>
+            <div class="pd-tech-list"><span class="tag filled">React</span><span class="tag filled">TypeScript</span><span class="tag filled">Tailwind CSS</span><span class="tag filled">Gemini API</span><span class="tag filled">Node.js</span><span class="tag filled">Express.js</span><span class="tag filled">PostgreSQL</span></div>
           </div>
           <div class="pd-sidebar-card" style="margin-top:1px;border-top:none;">
             <div class="pd-sidebar-label">Status</div>
-            <p style="font-size:.82rem;color:var(--muted);line-height:1.7;">Active — core interview room, auth, and results dashboard built. Eye-tracking refinement and PDF export in progress.</p>
+            <p style="font-size:.82rem;color:var(--muted);line-height:1.7;">In development. Question generation and voice input functional. Speech analysis and performance evaluation in progress.</p>
+          </div>
+          <div class="pd-sidebar-card" style="margin-top:1px;border-top:none;">
+            <div class="pd-sidebar-label">GitHub</div>
+            <a href="https://github.com/pragat1/LiveMirror" target="_blank" class="btn-p" style="display:block;text-align:center;font-size:.65rem;">github.com/pragat1/LiveMirror ↗</a>
           </div>
         </div>
       </div>
@@ -1544,78 +1473,6 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
   </div>
 </div>
 
-<!-- ══════════════════════════════ BLOG ══════════════════════════════ -->
-<div class="page" id="page-blog">
-  <div class="container">
-    <div class="blog-hero">
-      <div class="sec-label">Blog</div>
-      <h1 class="sec-title" style="font-size:clamp(2.5rem,6vw,5rem);">Writing &<br>Thoughts</h1>
-      <p style="color:var(--muted);font-size:.95rem;font-weight:300;margin-top:.75rem;max-width:560px;">Technical articles, project retrospectives, and learning notes. Writing is how I consolidate and share what I build.</p>
-    </div>
-    <div class="blog-grid" style="margin-bottom:4rem;">
-      <div class="blog-card">
-        <div class="blog-cat">Project Retrospective · AI</div>
-        <div class="blog-title">From Hackathon Prototype to Full Product — How CropCare Grew Beyond Thinkathon</div>
-        <div class="blog-excerpt">What changes when you take a 24-hour MVP and try to turn it into a real platform. Architecture decisions, offline-first thinking, and the AI integration story behind CropCare.</div>
-        <div class="blog-footer">
-          <span class="blog-date">Coming Soon</span>
-          <span class="blog-read">8 min read</span>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-cat">Technical · AI</div>
-        <div class="blog-title">Building an ATS Resume Scorer — What I Learned Making SmartHire AI</div>
-        <div class="blog-excerpt">ATS systems are proprietary black boxes. Here's how I reverse-engineered ATS behavior using public documentation, job posting patterns, and keyword gap analysis to build a working scorer.</div>
-        <div class="blog-footer">
-          <span class="blog-date">Coming Soon</span>
-          <span class="blog-read">7 min read</span>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-cat">Technical · AI</div>
-        <div class="blog-title">Live Mirror — Why Real-Time AI Interview Coaching Is Hard (And How I'm Solving It)</div>
-        <div class="blog-excerpt">Processing audio and video in real-time while maintaining a natural interview experience is harder than it sounds. Here's the architecture I'm building for Live Mirror's analysis pipeline.</div>
-        <div class="blog-footer">
-          <span class="blog-date">Coming Soon</span>
-          <span class="blog-read">6 min read</span>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-cat">SaaS · Product</div>
-        <div class="blog-title">Building StudySync — How I Turned My Own Academic Frustration Into a Product</div>
-        <div class="blog-excerpt">Managing GNDEC's 4th-semester load across five scattered apps gave me the idea. Here's how I designed and built an Academic OS that actually fits how students think about their day.</div>
-        <div class="blog-footer">
-          <span class="blog-date">Coming Soon</span>
-          <span class="blog-read">6 min read</span>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-cat">Learning</div>
-        <div class="blog-title">Why I Clone Products Instead of Building CRUD Apps</div>
-        <div class="blog-excerpt">Cloning Netflix, Pinterest, and Spotify taught me more about real-world product architecture than any tutorial. Reverse-engineering > building from scratch when you're learning.</div>
-        <div class="blog-footer">
-          <span class="blog-date">Coming Soon</span>
-          <span class="blog-read">5 min read</span>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-cat">Career</div>
-        <div class="blog-title">How I Structured My GitHub to Tell a Story, Not Just Show Code</div>
-        <div class="blog-excerpt">READMEs, pinned repos, contribution graphs, project documentation. Everything I did to make my GitHub communicate competence at a glance to recruiters who spend 10 seconds per profile.</div>
-        <div class="blog-footer">
-          <span class="blog-date">Coming Soon</span>
-          <span class="blog-read">4 min read</span>
-        </div>
-      </div>
-    </div>
-    <div class="blog-wip">
-      <h3>Articles Coming Soon</h3>
-      <p style="margin-bottom:1.25rem;">These posts are planned and being written. Subscribe or follow on LinkedIn to get notified when they publish.</p>
-      <a href="https://linkedin.com/in/pragati06" target="_blank" class="btn-p">Follow on LinkedIn →</a>
-    </div>
-  </div>
-</div>
-
 <!-- ══════════════════════════════ RESUME ══════════════════════════════ -->
 <div class="page" id="page-resume">
   <div class="container">
@@ -1628,7 +1485,7 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
         <a href="tel:+919501106033" class="tag filled">📞 +91 95011 06033</a>
         <a href="mailto:pragati06yadav@gmail.com" class="tag filled">✉ pragati06yadav@gmail.com</a>
         <a href="https://github.com/Pragat1" target="_blank" class="tag filled">GitHub @Pragat1</a>
-        <a href="https://pragat1.github.io/portfolio" target="_blank" class="tag filled">pragat1.github.io/portfolio</a>
+        <a href="https://pragati-portfolio-eight.vercel.app" target="_blank" class="tag filled">pragati-portfolio-eight.vercel.app</a>
       </div>
       <div style="display:flex;gap:.875rem;margin-top:1.5rem;flex-wrap:wrap;">
         <a href="https://github.com/Pragat1" target="_blank" class="btn-s" style="font-size:.65rem;">GitHub ↗</a>
@@ -1721,16 +1578,12 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
             <div class="res-item-desc">AI-powered resume builder with ATS scoring, job-description keyword matching, and AI career coach. React · Node.js · MongoDB.</div>
           </div>
           <div class="res-item">
-            <div class="res-item-header"><span class="res-item-title">🎤 Live Mirror — AI Interview Coach</span><span class="res-item-date">2026</span></div>
-            <div class="res-item-desc">Live AI interview practice room with WebRTC camera/mic integration, real-time communication analysis, and behavioral scoring. JavaScript · Web Speech API.</div>
+            <div class="res-item-header"><span class="res-item-title">🎤 LiveMirror — AI Interview Coach</span><span class="res-item-date">2026</span></div>
+            <div class="res-item-desc">AI interview simulation — role-specific question generation, voice-based mock interviews with speech analysis, structured AI-driven performance evaluation. React · TypeScript · Gemini API · Node.js · PostgreSQL.</div>
           </div>
           <div class="res-item">
-            <div class="res-item-header"><span class="res-item-title">📚 StudySync — Academic OS</span><span class="res-item-date">2025–2026</span></div>
-            <div class="res-item-desc">Full-stack student productivity SaaS — assignments, exams, attendance, CGPA analytics, streaks, AI study planner. React · Node.js · MongoDB.</div>
-          </div>
-          <div class="res-item">
-            <div class="res-item-header"><span class="res-item-title">🎓 Club Connect — Campus Platform</span><span class="res-item-date">2025</span></div>
-            <div class="res-item-desc">Club discovery and event platform for GNDEC campus — personalized recommendations, event feed, participation history. React · MySQL.</div>
+            <div class="res-item-header"><span class="res-item-title">💰 FinPilot AI — Finance Platform</span><span class="res-item-date">2026</span></div>
+            <div class="res-item-desc">Personal finance management — transaction tracking, budgeting, savings goals, debt tracking, spending analytics dashboard. React · TypeScript · Supabase · PostgreSQL.</div>
           </div>
         </div>
       </div>
@@ -1760,7 +1613,7 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
           <a href="https://linkedin.com/in/pragati06" target="_blank" class="c-link"><span class="c-link-type">LinkedIn</span><span class="c-link-label">linkedin.com/in/pragati06</span><span class="c-link-arrow">↗</span></a>
           <a href="mailto:pragati06yadav@gmail.com" class="c-link"><span class="c-link-type">Email</span><span class="c-link-label">pragati06yadav@gmail.com</span><span class="c-link-arrow">→</span></a>
           <a href="tel:+919501106033" class="c-link"><span class="c-link-type">Phone</span><span class="c-link-label">+91 95011 06033</span><span class="c-link-arrow">→</span></a>
-          <a href="https://pragat1.github.io/portfolio" target="_blank" class="c-link"><span class="c-link-type">Portfolio</span><span class="c-link-label">pragat1.github.io/portfolio</span><span class="c-link-arrow">↗</span></a>
+          <a href="https://pragati-portfolio-eight.vercel.app" target="_blank" class="c-link"><span class="c-link-type">Portfolio</span><span class="c-link-label">pragati-portfolio-eight.vercel.app</span><span class="c-link-arrow">↗</span></a>
         </div>
       </div>
       <div>
@@ -1779,7 +1632,7 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
   <div class="footer-logo">PY<em>.</em></div>
   <div class="footer-links">
     <a href="#" onclick="navigate('projects');return false;">Projects</a>
-    <a href="#" onclick="navigate('blog');return false;">Blog</a>
+    <a href="#" onclick="navigate('certs');return false;">Certifications</a>
     <a href="#" onclick="navigate('resume');return false;">Resume</a>
     <a href="https://github.com/Pragat1" target="_blank">GitHub</a>
     <a href="https://linkedin.com/in/pragati06" target="_blank">LinkedIn</a>
